@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/demoImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center"
+        android:src="@drawable/this_demo" />
+
+    <TextView
+        android:id="@+id/textID"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:text="This is so tasty!"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+            <TableRow android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp">
+                <Button
+                    android:id="@+id/buttonFadeIN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="fade in"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp" />
+
+                <Button
+                    android:id="@+id/buttonFadeOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="fade out"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp" />
+
+            </TableRow>
+
+            <TableRow android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp">
+                <Button
+                    android:id="@+id/buttonRotate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="rotate"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp" />
+
+                <Button
+                    android:id="@+id/buttonMove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="move"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp" />
+
+            </TableRow>
+            <TableRow android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp">
+                <Button
+                    android:id="@+id/buttonLeft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="left"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp" />
+
+
+                <Button
+                    android:id="@+id/buttonRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="right"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp" />
+
+            </TableRow>
+
+            <Button
+                android:id="@+id/textbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:text=" move text to the right"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp" />
+
+        </TableLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
